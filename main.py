@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, PillowWriter
 
+# Reading and cleaning the base file
 
 file_path=".\Input Data\populations.txt"
 
@@ -12,6 +13,7 @@ df["Males"]=df["Males"].str.replace(",","").astype('int')
 df["Females"]=df["Females"].str.replace(",","").astype('int')
 df['Females']=df['Females']*-1
 
+# Created a base graph using matplotlib and then embedded it into a fucntion of the year variable.
 
 fig, ax=plt.subplots(figsize=(15,8))
 def animate(year):
@@ -32,7 +34,7 @@ def animate(year):
     ax.legend([males,females],["Males","Females"])
 
     ax.set_title(f"Canada's Poulation in {year}",size=18,weight="bold")
-
+# Animating the graph 
 animation=FuncAnimation(fig, animate,frames=df["Year"].unique())
 animation.save("./output/Population Distribution.gif",dpi=300,writer=PillowWriter(fps=5))
 
