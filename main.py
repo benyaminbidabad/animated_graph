@@ -28,4 +28,7 @@ ax.bar_label(females,padding= 3, labels=[f'{-1*round(x,-3):,}' for x in filtered
 
 ax.legend([males,females],["Males","Females"])
 
+ax.legend([males,females])
+
+
 plt.show()
