@@ -1,5 +1,5 @@
 This project is an animated bar chart that looks like this:
-[alt text](https://github.com/benyaminbidabad/animated_graphs/blob/main/Output/Population%20Distribution.gif)
+![alt text](https://github.com/benyaminbidabad/animated_graphs/blob/main/Output/Population%20Distribution.gif)
 
 The principles is simple. A base graph is created in a function. Then using the FuncAnimation package it is reiterated over the desired values to create an animation.
 
