@@ -1,6 +1,6 @@
 This project is a collection of animated charts.
 
-[b]Poplation Distribution Chart:
+Poplation Distribution Chart:
 
 ![Animated Graph](https://github.com/benyaminbidabad/animated_graph/blob/main/Output/Population%20Distribution.gif)
 
