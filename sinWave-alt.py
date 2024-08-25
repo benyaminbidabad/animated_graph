@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib
-from matplotlib.animation import PillowWriter
+from matplotlib.animation import PillowWriter, FuncAnimation
 import matplotlib.pyplot as plt
 
 fig=plt.figure()
@@ -25,9 +25,23 @@ writer=PillowWriter(fps=30)
 xlist=[]
 ylist=[]
 
-with writer.saving(fig,"./Output/sinWave.gif",100):
-    for xval in np.linspace(-5,5,200):
-        xlist.append(xval)
-        ylist.append(func(xval))
-        l.set_data(xlist,ylist)
-        writer.grab_frame()
+def anifunc(xval):
+    xlist.append(xval)
+    ylist.append(func(xval))
+    l.set_data(xlist,ylist)
+
+
+
+animation=FuncAnimation(fig,anifunc,frames=np.linspace(-5,5,200))
+animation.save("./Output/sinWave-alt.gif",writer,dpi=100)
+
+
+# def anismation(xval):
+#         for xval in np.linspace(-5,5,100):
+#         xlist.append(xval)
+#         ylist.append(func(xval))
+#         l.set_data(xlist,ylist)
+
+
+
+# with writer.saving(fig,"./Output/sinWave.gif",100):
