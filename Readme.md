@@ -6,7 +6,7 @@ Poplation Distribution Chart:
 
 The principles is simple. A base graph is created in a function. Then using the FuncAnimation package it is reiterated over the desired values to create an animation.
 
-[b]Sinus Wave Chart:
+Sinus Wave Chart:
 
 ![Sinus Wave](https://github.com/benyaminbidabad/animated_graphs/blob/main/Output/sinWave.gif)
 
