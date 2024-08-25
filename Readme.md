@@ -1,12 +1,12 @@
 This project is a collection of animated charts.
 
-[b]Poplation Distribution Chart:
+Poplation Distribution Chart:
 
-![Animated Graph](https://github.com/benyaminbidabad/animated_graphs/blob/main/Output/Population%20Distribution.gif)
+![Animated Graph](https://github.com/benyaminbidabad/animated_graph/blob/main/Output/Population%20Distribution.gif)
 
 The principles is simple. A base graph is created in a function. Then using the FuncAnimation package it is reiterated over the desired values to create an animation.
 
-[b]Sinus Wave Chart:
+Sinus Wave Chart:
 
 ![Sinus Wave](https://github.com/benyaminbidabad/animated_graphs/blob/main/Output/sinWave.gif)
 
