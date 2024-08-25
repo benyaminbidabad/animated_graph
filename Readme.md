@@ -17,5 +17,6 @@ This repo is inspired from these youtube video:
 
 Population chart:
 https://www.youtube.com/watch?v=K1LezPnJZtk&t=244s
+
 Sin Wave:
 https://www.youtube.com/watch?v=bNbN9yoEOdU
